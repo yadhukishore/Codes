@@ -112,4 +112,6 @@ Then, `dummy.next = head;` sets the `next` pointer of the dummy node to point to
 6. **Return**:
    - Finally, it returns the `next` pointer of the dummy node, which points to the head of the modified linked list.
 
+https://youtu.be/TtGfi6dqu3Q?si=nRM-ai9CYmgVpKuz
+
 Overall, this algorithm efficiently removes consecutive zero-sum sequences from the linked list in two passes, utilizing a dummy node and a map to keep track of cumulative sums and their last occurrences.
