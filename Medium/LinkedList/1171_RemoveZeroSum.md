@@ -79,6 +79,15 @@ var removeZeroSumSublists = function(head) {
 
 This code aims to remove consecutive sequences of nodes from a linked list where the sum of values in each sequence equals zero. Let's break down the code step by step:
 
+
+The line `let dummy = new ListNode(0);` creates a dummy node with a value of `0`. This dummy node serves as a placeholder and helps simplify the code, particularly in cases where the removal of nodes starts from the beginning of the list.
+
+Then, `dummy.next = head;` sets the `next` pointer of the dummy node to point to the head of the original linked list. By doing this, the dummy node becomes the new head of the list, and the original head becomes the second node in the list.
+
+
+
+
+
 1. **ListNode Definition**: This is a simple definition of a node in a singly linked list. Each node has a value (`val`) and a pointer to the next node (`next`).
 
 2. **Function Definition**: `removeZeroSumSublists` is a function that takes the head of a linked list as its argument and returns the head of the modified list.
